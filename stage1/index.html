@@ -34,6 +34,7 @@
             border-radius: 8%;
             margin-top: 10px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+            margin-bottom: 30px;
         }
 
         p {
@@ -51,30 +52,38 @@
             cursor: pointer;
             display: inline-flex;
             align-items: center;
+            height: 40px;
         }
 
         .github-button img {
             margin-right: 5px;
-            width: 28px;
-            margin-top: -.5px;
+            margin-top: 26px;
+            width: 26px;
+            height: 26px;
         }
 
         .github-button p {
             font-size: 12px;
             margin-left: 15px;
+            margin-top: 0px;
+            margin-bottom: 0px;
             font-weight: bold;
         }
     </style>
 </head>
 
 <body>
-    <h1 data-testid="'slackUserName">Mide Giwa</h1>
+    
+    <label>Slack Username</label><h1 data-testid="'slackUserName">Mide Giwa</h1>
     <img src="slack-profile-img.jpeg" alt="Mide Giwa" data-testid="slackDisplayImg" />
-    <p id="currentDay" data-testid="currentDayOfTheWeek"></p>
-    <p id="currentUTC" data-testid="currentUTCTime"></p>
-    <p data-testid="mytrack">Frontend</p>
+    <br>
+    <label>Current Day of the Week</label><p id="currentDay" data-testid="currentDayOfTheWeek"></p>
+    
+    <label>Current UTC Time</label><p id="currentUTC" data-testid="currentUTCTime"></p>
+    
+    <label>Track</label><p data-testid="mytrack">Frontend</p>
 
-    <a class="github-button" href="https://github.com/MideGiwa/hngx-frontend" data-testid="githubURL">
+    <a class="github-button" href="https://github.com/MideGiwa/hngx-frontend" data-testid="githubURL" target="_blank">
         <img src="github-mark-white.svg" />
         <p>Github</p>
     </a>
@@ -82,7 +91,7 @@
         // Get current date
         const currentDate = new Date();
         const currentDay = new Intl.DateTimeFormat('en-US', { weekday: 'long' }).format(currentDate);
-        const currentTime = currentDate.toISOString();
+        const currentTime = currentDate.toISOString().split('T')[1].replace('Z', '');
 
 
         document.getElementById("currentDay").textContent = currentDay;
