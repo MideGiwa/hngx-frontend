@@ -91,11 +91,16 @@
         // Get current date
         const currentDate = new Date();
         const currentDay = new Intl.DateTimeFormat('en-US', { weekday: 'long' }).format(currentDate);
-        const currentTime = currentDate.toISOString().split('T')[1].replace('Z', '');
-
-
         document.getElementById("currentDay").textContent = currentDay;
-        document.getElementById("currentUTC").textContent = currentTime;
+
+        function updateUTCTime() {
+            const currentUTC = new Date();
+            const currentTime = currentUTC.toISOString().split('T')[1].replace('Z', '');
+            document.getElementById("currentUTC").textContent = currentTime;
+        }
+        
+        setInterval(updateUTCTime, 1);
+        
 
     </script>
 </body>
