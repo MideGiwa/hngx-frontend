@@ -77,9 +77,9 @@
     <label>Slack Username</label><h1 data-testid="'slackUserName">Mide Giwa</h1>
     <img src="slack-profile-img.jpeg" alt="Mide Giwa" data-testid="slackDisplayImage" />
     <br>
-    <label>Current Day of the Week</label><p id="currentDay" data-testid="currentDayOfTheWeek"></p>
+    <label>Current Day of the Week</label><p data-testid="currentDayOfTheWeek"></p>
     
-    <label>Current UTC Time</label><p id="currentUTC" data-testid="currentUTCTime"></p>
+    <label>Current UTC Time</label><p data-testid="currentUTCTime"></p>
     
     <label>Track</label><p data-testid="myTrack">Frontend</p>
 
@@ -91,12 +91,12 @@
         // Get current date
         const currentDate = new Date();
         const currentDay = new Intl.DateTimeFormat('en-US', { weekday: 'long' }).format(currentDate);
-        document.getElementById("currentDay").textContent = currentDay;
+        document.getElementByAttribute("currentDayOfTheWeek").textContent = currentDay;
 
         function updateUTCTime() {
             //const currentUTC = new Date();
             //const currentTime = currentUTC.toISOString().split('T')[1].replace('Z', '');
-            document.getElementById("currentUTC").textContent = Date.now();
+            document.getElementByAttribute("currentUTCTime").textContent = Date.now();
         }
         
         setInterval(updateUTCTime, 1);
