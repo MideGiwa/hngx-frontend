@@ -7,69 +7,7 @@
      <title>HNGx Frontend Stage 1</title> 
      <meta name="description" content=""> 
      <meta name="viewport" content="width=device-width, initial-scale=1"> 
-     <style> 
-         body { 
-             font-family: Arial, sans-serif; 
-             background-color: #121212; 
-             text-align: center; 
-             color: #EDEDED; 
-         } 
-  
-         .card { 
-             border: 1px solid #ccc; 
-             border-radius: 8px; 
-             padding: 20px; 
-             background-color: #fff; 
-             max-width: 300px; 
-             margin: 0 auto; 
-             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
-         } 
-  
-         h1 { 
-             font-size: 2.5rem; 
-         } 
-  
-         img { 
-             width: 20%; 
-             border-radius: 8%; 
-             margin-top: 10px; 
-             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.8); 
-             margin-bottom: 30px; 
-         } 
-  
-         p { 
-             font-size: 1.5rem; 
-         } 
-  
-         .github-button { 
-             background-color: #000000; 
-             color: #FFFFFF; 
-             border: none; 
-             gap: 4; 
-             padding: 10px 20px; 
-             border-radius: 4px; 
-             text-decoration: none; 
-             cursor: pointer; 
-             display: inline-flex; 
-             align-items: center; 
-             height: 40px; 
-         } 
-  
-         .github-button img { 
-             margin-right: 5px; 
-             margin-top: 26px; 
-             width: 26px; 
-             height: 26px; 
-         } 
-  
-         .github-button p { 
-             font-size: 12px; 
-             margin-left: 15px; 
-             margin-top: 0px; 
-             margin-bottom: 0px; 
-             font-weight: bold; 
-         } 
-     </style> 
+     <link rel="stylesheet" href=style.css />
 </head> 
   
 <body> 
@@ -88,18 +26,7 @@
          <p>Github</p> 
      </a> 
      <script> 
-         // Get current date 
-         const currentDate = new Date(); 
-         const currentDay = new Intl.DateTimeFormat('en-US', { weekday: 'long' }).format(currentDate); 
-         document.getElementById("currentDay").textContent = currentDay; 
-  
-         function updateUTCTime() { 
-             //const currentUTC = new Date(); 
-             //const currentTime = currentUTC.toISOString().split('T')[1].replace('Z', ''); 
-             document.getElementById("currentUTC").textContent = Date.now(); 
-         } 
-  
-         setInterval(updateUTCTime, 1000); 
+       src="script.js"
   
   
      </script> 
