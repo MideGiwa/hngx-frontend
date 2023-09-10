@@ -74,7 +74,7 @@
 
 <body>
     
-    <label>Slack Username</label><h1 data-testid="'slackUserName">Mide Giwa</h1>
+    <label>Slack Username</label><h1 data-testid="slackUserName">Mide Giwa</h1>
     <img src="slack-profile-img.jpeg" alt="Mide Giwa" data-testid="slackDisplayImage" />
     <br>
     <label>Current Day of the Week</label><p id="currentDay" data-testid="currentDayOfTheWeek"></p>
@@ -99,7 +99,7 @@
             document.getElementById("currentUTC").textContent = Date.now();
         }
         
-        setInterval(updateUTCTime, 1000);
+        setInterval(updateUTCTime, 1);
         
 
     </script>
