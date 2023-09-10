@@ -4,8 +4,7 @@ body {
              text-align: center; 
              color: #EDEDED; 
          } 
-  
-         .card { 
+.card { 
              border: 1px solid #ccc; 
              border-radius: 8px; 
              padding: 20px; 
@@ -15,11 +14,10 @@ body {
              box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
          } 
   
-         h1 { 
+h1 { 
              font-size: 2.5rem; 
          } 
-  
-         img { 
+img { 
              width: 20%; 
              border-radius: 8%; 
              margin-top: 10px; 
@@ -27,11 +25,11 @@ body {
              margin-bottom: 30px; 
          } 
   
-         p { 
+p { 
              font-size: 1.5rem; 
          } 
   
-         .github-button { 
+.github-button { 
              background-color: #000000; 
              color: #FFFFFF; 
              border: none; 
@@ -45,14 +43,14 @@ body {
              height: 40px; 
          } 
   
-         .github-button img { 
+.github-button img { 
              margin-right: 5px; 
              margin-top: 26px; 
              width: 26px; 
              height: 26px; 
          } 
   
-         .github-button p { 
+.github-button p { 
              font-size: 12px; 
              margin-left: 15px; 
              margin-top: 0px; 
