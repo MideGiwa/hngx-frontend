@@ -1,0 +1,231 @@
+main {
+  text-align: center;
+  vertical-align: center;
+  line-height: 100vh;
+}
+
+#id {
+  width: 100vw;
+  height: 100vh;
+}
+
+.section {
+  width: 100vw;
+  height: 100vh;
+  background-color: #ccc;
+  /* You can set the background color as needed */
+}
+
+
+.bg-poster-image {
+  background-image: url(/poster.png);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  top: 0%;
+  left: 0%;
+}
+
+#text1 {
+  font-size: 32px;
+  font-weight: bold;
+  font-family: 'DM Sans', sans-serif;
+  padding-left: 30px;
+  margin-left: 5px;
+}
+
+.movie-details {
+  margin-left: 25px;
+}
+
+a {
+  font-family: 'DM sans', sans-serif;
+  text-decoration: none;
+  color: black;
+}
+
+.movies-list {
+  display: grid;
+  align-content: center;
+  grid-template-columns: auto auto auto auto;
+  gap: 2rem;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.movie-poster {
+  width: 200px;
+  padding: 25px;
+}
+
+#movies {
+  width: 100%;
+  padding-bottom: 30px;
+}
+
+.movie-card {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  text-decoration: none;
+  font-family: 'DM Sans', sans-serif;
+}
+
+
+
+.movie-card:hover {
+  transform: scale(1.05);
+  /* Scale the card up by 5% */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  /* Increase the box shadow */
+}
+
+.movie-release-date {
+  font-size: 12px;
+  color: gray;
+  font-family: 'DM Sans', sans-serif;
+  text-decoration: none;
+}
+
+.movie-title {
+  font-size: 18px;
+}
+
+.overview {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 400;
+}
+
+.rating {
+  display: inline-flex;
+  gap: 10px;
+  font-size: 12px;
+}
+
+.play-card {
+  color: #BE123C;
+  background-color: rgba(190, 18, 60, 0.7);
+  border-radius: 20px;
+  width: 150px;
+  font-size: 12px;
+  padding: 20px;
+  height: 120px;
+  margin-left: -10px
+}
+
+.logo {
+  display: flex;
+  flex-direction: row;
+  color: black;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+
+
+.details-list {
+  display: flex;
+  gap: 2rem;
+  font-family: 'DM Sans', sans-serif;
+}
+
+details-list>li {
+  margin-left: 50px;
+}
+
+#genre {
+  font-size: 12px;
+  color: #BE123C;
+  margin-top: 3px;
+}
+
+.logo>img {
+  width: 32px;
+}
+
+.op {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.op>span {
+  margin-left: 20px;
+}
+
+#footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#drawer {
+  font-family: 'DM Sans', sans-serif;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  max-width: 180px;
+  border-radius: 0px 45px 45px 0px;
+}
+
+.drawer--items {
+  display: grid;
+  align-content: center;
+  grid-template-columns: auto auto auto auto;
+  gap: 2rem;
+  margin-left: 20px;
+  padding: 20px;
+}
+
+.socials,
+.legal {
+  display: flex;
+  flex-direction: row;
+  font-family: 'DM Sans', sans-serif;
+  gap: 2rem;
+}
+
+.year {
+  color: gray;
+  font-family: 'DM Sans', sans-serif;
+}
+
+#other {
+  margin-left: 200px;
+  padding: 20px;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.movies-gist {
+  margin-left: 50px;
+}
+
+.video-responsive {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo>h1 {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 24px;
+}
+
+iframe {
+  width: 900px;
+  height: 449px
+}
